@@ -1509,28 +1509,28 @@ const POKEMON = {
 const GYMS = {
   gym_santalune: {
     leader_img:"ViolettaXY.png",
-    name:'Arène de Santalune', leader:'Violette', type:'insecte', emoji:'🦋',
+    name:'Arène de Santalune', leader:'Violet', type:'insecte', emoji:'🦋',
     city:'Santalune', badge:'Badge Scarabée', badge_emoji:'🦋',
-    desc:'Violette est une photographe passionnée. Son Vivillon est magnifique mais dangereux !',
+    desc:'Violet est une photographe passionnée. Son Vivillon est magnifique mais dangereux !',
     challenge:[
       'Traverse le couloir de toiles d\'araignée (lance D6, score ≤ 3 = perds 1 tour)',
       'Bats 2 élèves de l\'arène (Pokémon Lépisange Niv.1 chacun)',
-      'Affronte Violette : Spewpa Lv2 + Vivillon Lv3',
+      'Affronte Violet : Lépisange Lv2 + Vivillon Lv3',
     ],
-    eleve_pokemon:['lépisange','chenipotte'],
-    leader_pokemon:['chenipotte','lépisange'],
+    eleve_pokemon:['lépisange','scatterbug'],
+    leader_pokemon:['scatterbug','lépisange'],
     reward_money:2000,
     difficulty_scale:{ facile:1, normale:2, moyen:2, difficile:3, extreme:3, nightmare:4 }
   },
   gym_cyllage: {
     leader_img:"LinoXY.png",
-    name:'Arène de Cyllage', leader:'Rochers', type:'roche', emoji:'🪨',
+    name:'Arène de Cyllage', leader:'Lin', type:'roche', emoji:'🪨',
     city:'Cyllage', badge:'Badge Falaise', badge_emoji:'🪨',
-    desc:'Rochers est un grimpeur expert. L\'arène est une falaise intérieure à escalader !',
+    desc:'Lin est un grimpeur expert. L\'arène est une falaise intérieure à escalader !',
     challenge:[
       'Escalade la paroi rocheuse : lance D6 3 fois, totalise ≥ 10 ou recommence',
       'Bats 2 élèves alpinistes (Onix Lv2 chacun)',
-      'Affronte Rochers : Amaura Lv3 + Tyrunt Lv3',
+      'Affronte Lin : Amoras Lv3 + Arkéapti Lv3',
     ],
     eleve_pokemon:['onix','rhinocorne'],
     leader_pokemon:['amoras','arkéapti'],
@@ -1539,61 +1539,62 @@ const GYMS = {
   },
   gym_shalour: {
     leader_img:"OrnellaXY.png",
-    name:'Arène de Shalour', leader:'Cœur', type:'combat', emoji:'🥊',
+    name:'Arène de Shalour', leader:'Ornella', type:'combat', emoji:'🥊',
     city:'Shalour', badge:'Badge Vague', badge_emoji:'🥊',
-    desc:'Cœur est la Maîtresse de la Méga-Évolution ! Elle t\'apprendra le secret des Méga Gemmes.',
+    desc:'Ornella est la Maîtresse de la Méga-Évolution ! Elle t\'apprendra le secret des Méga Gemmes.',
     challenge:[
       'Traverse le pont tournant : D6 pair = avance, impair = recule d\'une case',
       'Bats 3 élèves judokas (Mienfoo Lv2)',
-      'Affronte Cœur : Mienfoo Lv3 + Hawlucha Lv4 + Lucario Lv5',
+      'Affronte Ornella : Mienfoo Lv3 + Machopeur Lv3 + Brutalibre Lv4 + Lucario Lv5',
     ],
     eleve_pokemon:['mienfoo','pantimos'],
-    leader_pokemon:['mienfoo','lucario'],
+    leader_pokemon:['mienfoo','machoke','hawlucha','lucario'],
     reward_money:3500,
     special:'apprend_mega_evolution',
     difficulty_scale:{ facile:2, normale:3, moyen:4, difficile:4, extreme:5, nightmare:6 }
   },
   gym_coumarine: {
-    name:'Arène de Coumarine', leader:'Émeraude', type:'plante', emoji:'🌿',
+    leader_img:'AmurXY.png',
+    name:'Arène de Coumarine', leader:'Amour', type:'plante', emoji:'🌿',
     city:'Coumarine', badge:'Badge Plante', badge_emoji:'🌿',
-    desc:'Émeraude vit dans son arbre géant. Pour l\'atteindre il faut grimper !',
+    desc:'Amour est un vieux sage de la forêt. Ses Pokémon Herbe sont redoutables !',
     challenge:[
       'Monte dans l\'arbre : avance de D6 cases à chaque tour (besoin d\'atteindre 15)',
       'Bats 2 élèves botanistes (Skiddo Lv3)',
-      'Affronte Émeraude : Skiddo Lv4 + Gogoat Lv5',
+      'Affronte Amour : Joliflor Lv4 + Boustiflor Lv4 + Gogoat Lv5',
     ],
     eleve_pokemon:['chevrette','skiddo'],
-    leader_pokemon:['chevrette','skiddo'],
+    leader_pokemon:['jumpluff','weepinbell','skiddo'],
     reward_money:3500,
     difficulty_scale:{ facile:3, normale:4, moyen:4, difficile:5, extreme:5, nightmare:6 }
   },
   gym_laverre: {
     leader_img:"ValérieXY.png",
-    name:'Arène de Laverre', leader:'Valériane', type:'fee', emoji:'🌸',
+    name:'Arène de Laverre', leader:'Valérie', type:'fee', emoji:'🌸',
     city:'Laverre', badge:'Badge Fée', badge_emoji:'🌸',
-    desc:'Valériane est une créatrice de mode venue de Rangifer. Son arène est un manoir hanté !',
+    desc:'Valérie est une créatrice de mode venue de Rangifer. Son arène est un manoir hanté !',
     challenge:[
       'Traverse le labyrinthe enchanté : tire D6 à chaque salle (1-3 = piège, 4-6 = avance)',
       'Bats 3 élèves fées (Créfadet Lv3)',
-      'Affronte Valériane : Mawile Lv4 + Sylveon Lv5',
+      'Affronte Valérie : Mawile Lv4 + M. Mime Lv4 + Sylveon Lv5',
     ],
     eleve_pokemon:['créfadet','fantominus'],
-    leader_pokemon:['mawile','créfadet'],
+    leader_pokemon:['mawile','mélodelfe','sylveon'],
     reward_money:4000,
     difficulty_scale:{ facile:3, normale:4, moyen:5, difficile:5, extreme:6, nightmare:6 }
   },
   gym_anistar: {
     leader_img:"AstraXY.png",
-    name:'Arène d\'Anistar', leader:'Dianthéa', type:'psy', emoji:'🔮',
+    name:'Arène d\'Anistar', leader:'Astra', type:'psy', emoji:'🔮',
     city:'Anistar', badge:'Badge Phare', badge_emoji:'🔮',
-    desc:'Dianthéa utilise l\'horloge cosmique. Ses Pokémon lisent l\'avenir !',
+    desc:'Astra utilise l\'horloge cosmique. Ses Pokémon lisent l\'avenir !',
     challenge:[
       'Résous l\'enigme des étoiles : additionne le résultat de 2D6, pair = avance, impair = recule',
       'Bats 3 élèves médiums (Espurr Lv4)',
-      'Affronte Dianthéa : Méwostic Lv5 + Gardevoir Lv6',
+      'Affronte Astra : Cryptékin Lv5 + Roigada Lv5 + Méwostic Lv5',
     ],
     eleve_pokemon:['espurr','abra'],
-    leader_pokemon:['espurr','méwostic'],
+    leader_pokemon:['sigilyph','slowking','méwostic'],
     reward_money:4500,
     difficulty_scale:{ facile:4, normale:5, moyen:5, difficile:6, extreme:6, nightmare:6 }
   },
@@ -1605,25 +1606,25 @@ const GYMS = {
     challenge:[
       'Réponds à 3 questions de quiz (piocher une carte Événement, 4-6 = bonne réponse)',
       'Bats 3 robots électrik (Magnéton Lv4)',
-      'Affronte Lem : Jolteon Lv5 + Électivire Lv6',
+      'Affronte Lem : Emolga Lv5 + Magnéton Lv5 + Héliolisk Lv5',
     ],
     eleve_pokemon:['magnéti','électabuzz'],
-    leader_pokemon:['électabuzz','magnéton'],
+    leader_pokemon:['emolga','magnéton','heliolisk'],
     reward_money:5000,
     difficulty_scale:{ facile:4, normale:5, moyen:5, difficile:6, extreme:6, nightmare:7 }
   },
   gym_snowbelle: {
     leader_img:"EdelXY.png",
-    name:'Arène de Snowbelle', leader:'Wulfric', type:'glace', emoji:'❄',
+    name:'Arène de Snowbelle', leader:'Edel', type:'glace', emoji:'❄',
     city:'Snowbelle', badge:'Badge Blizzard', badge_emoji:'❄',
-    desc:'Wulfric est un géant au cœur tendre mais aux Pokémon redoutables !',
+    desc:'Edel est un géant au cœur tendre mais aux Pokémon redoutables !',
     challenge:[
       'Traverse les blocs de glace : lance D6 × 2 = cases avancées sur glace (total ≥ 20)',
-      'Bats 3 maîtres des glaces (Frissonille Lv4)',
-      'Affronte Wulfric : Beartic Lv5 + Avalugg Lv6',
+      'Bats 3 maîtres des glaces (Stelagon Lv4)',
+      'Affronte Edel : Blizzaroi Lv5 + Cryogonal Lv5 + Séracrawl Lv6',
     ],
     eleve_pokemon:['frissonille','bergmite'],
-    leader_pokemon:['frissonille','ours_ange'],
+    leader_pokemon:['abomasnow','cryogonal','avalugg'],
     reward_money:5000,
     special:'bonus_mega_gemme',
     difficulty_scale:{ facile:4, normale:5, moyen:6, difficile:6, extreme:7, nightmare:7 },
@@ -1635,7 +1636,7 @@ const GYMS = {
     req_badges: 7,
     req_level: 5,
     challenge: ['Bats 3 Pokémon Herbe (dont Gogoat Lv6)'],
-    leader_pokemon: ['marisson','gogoat','boguérisse'],
+    leader_pokemon: ['jumpluff','weepinbell','skiddo'],
     difficulty_scale: { facile:5, normale:5, difficile:6 }
   }
   },
@@ -2263,18 +2264,22 @@ function getPokeSprite(id, shiny=false) {
 }
 
 
-function togglePokeShiny(btn) {
-  const img = btn.previousElementSibling;
+function togglePokeShiny(img, btn) {
   if (!img) return;
   const pokeid = img.dataset.pokeid;
   const isShiny = img.dataset.mode === 'shiny';
   if (isShiny) {
     const src = getPokeSprite(pokeid, false);
-    if (src) { img.src = src; img.dataset.mode = 'normal'; btn.style.opacity = '.4'; btn.style.background = ''; }
+    if (src) {
+      img.src = src; img.dataset.mode = 'normal';
+      if (btn) { btn.style.background='rgba(0,0,0,.5)'; btn.dataset.on='false'; const k=document.getElementById('shiny-toggle-knob'); if(k){k.style.left='2px';k.style.background='rgba(240,234,216,.4)';} }
+    }
   } else {
     const src = getPokeSprite(pokeid, true);
-    if (src) { img.src = src; img.dataset.mode = 'shiny'; btn.style.opacity = '1'; btn.style.background = 'rgba(201,168,76,.5)'; }
-    else showToast('Pas de shiny disponible pour ce Pokémon !');
+    if (src) {
+      img.src = src; img.dataset.mode = 'shiny';
+      if (btn) { btn.style.background='rgba(201,168,76,.5)'; btn.dataset.on='true'; const k=document.getElementById('shiny-toggle-knob'); if(k){k.style.left='16px';k.style.background='var(--gold)';} }
+    } else showToast('Pas de shiny disponible pour ce Pokémon !');
   }
 }
 
@@ -2471,7 +2476,10 @@ function openPokeModal(id){
       ${(()=>{
         const spr = getPokeSprite(id, false);
         const sprS = getPokeSprite(id, true);
-        if(spr) return '<div style="position:relative"><img id="modal-poke-sprite" src="'+spr+'" data-pokeid="'+id+'" data-mode="normal" style="width:80px;height:80px;object-fit:contain">' + (sprS ? '<button onclick="togglePokeShiny(this.previousElementSibling);event.stopPropagation()" title="Shiny" style="position:absolute;bottom:-4px;right:-4px;background:rgba(201,168,76,.3);border:1px solid var(--gold);border-radius:6px;padding:4px 8px;font-size:12px;cursor:pointer;color:var(--gold)">✨ Shiny</button>' : '') + '</div>';
+        if(spr) return '<div style="position:relative;display:inline-block">'
+          + (sprS ? '<button id="shiny-toggle-btn" onclick="togglePokeShiny(document.getElementById(\'modal-poke-sprite\'),this);event.stopPropagation()" title="Shiny" style="position:absolute;top:4px;right:4px;width:32px;height:18px;border-radius:9px;border:1.5px solid rgba(201,168,76,.5);background:rgba(0,0,0,.5);cursor:pointer;padding:0;z-index:2;transition:.2s" data-on="false"><span style="position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:rgba(240,234,216,.4);transition:.2s;display:block" id="shiny-toggle-knob"></span></button>' : '')
+          + '<img id="modal-poke-sprite" src="'+spr+'" data-pokeid="'+id+'" data-mode="normal" style="width:80px;height:80px;object-fit:contain;display:block">'
+          + '</div>';
         return '<div style="font-size:64px">'+pk.emoji+'</div>';
       })()}
     </div>
@@ -3059,7 +3067,7 @@ function openTeamSlotModal(playerIdx, teamIdx) {
       </div>
       <button class="btn-close" onclick="closeModal()">✕</button>
     </div>
-    <div class="modal-art" style="background:linear-gradient(160deg,${tc}33,${tc}11)">${pk.emoji}</div>
+    <div class="modal-art" style="background:linear-gradient(160deg,${tc}33,${tc}11)">${(()=>{const s=getPokeSprite(slot.id);return s?`<img src="${s}" style="width:80px;height:80px;object-fit:contain;image-rendering:pixelated" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'${pk.emoji}',style:'font-size:64px'}))">`:`<span style="font-size:64px">${pk.emoji}</span>`;})()}</div>
     <div class="modal-body">
       <div style="font-family:'Cinzel',serif;font-size:10px;color:var(--gold);letter-spacing:2px;margin-bottom:8px">NIVEAU ${slot.level} / 6</div>
       <div style="margin-bottom:12px">
@@ -3123,7 +3131,7 @@ renderPlayersPanel = function() {
           const xpD = xpProgress(slot);
           const xpPct = xpD.pct;
           return `<div class="team-pokemon" draggable="true" ondragstart="dragTeamSlot(event,${i},${j})" onclick="openTeamSlotModal(${i},${j})">
-            <div class="tp-art">${pk.emoji}</div>
+            <div class="tp-art">${(()=>{const s=getPokeSprite(slot.id);return s?`<img src="${s}" style="width:48px;height:48px;object-fit:contain;mix-blend-mode:lighten">`:pk.emoji;})()}</div>
             <div class="tp-info">
               <div class="tp-name">${pk.n} <span style="color:rgba(240,234,216,.35);font-size:9px">Niv.${slot.level}</span></div>
               <div class="tp-hp-bar"><div class="tp-hp-fill" style="width:${hpPct}%;background:${hpColor}"></div></div>
@@ -3484,7 +3492,7 @@ function renderPCBox(playerIdx) {
     return `<div class="pcbox-slot" draggable="true" id="pcbox-${playerIdx}-${bi}"
       ondragstart="dragPCSlot(event,${playerIdx},${bi})"
       title="Glisse dans l'équipe pour transférer">
-      <div class="ps-art">${pk.emoji}</div>
+      <div class="ps-art">${(()=>{const s=getPokeSprite(slot.id);return s?`<img src="${s}" style="width:40px;height:40px;object-fit:contain;mix-blend-mode:lighten">`:pk.emoji;})()}</div>
       <div class="ps-name">${pk.n}</div>
       <div class="ps-lvl">Niv.${slot.level} · ${slot.currentHp}PV</div>
       <button class="btn-to-team" onclick="pcToTeam(${playerIdx},${bi})">➕</button>
@@ -3611,9 +3619,7 @@ function openGymChallenge(gymId, playerIdx) {
   const gym2 = GYMS[gymId];
   const trainerFile = (gym2 && gym2.leader_img) || (typeof GYM_TRAINER_SPRITES !== 'undefined' && GYM_TRAINER_SPRITES[gymId]);
   const trainerSrc = trainerFile ? getSpriteUrl(trainerFile) : null;
-  const pCharId = p.characterId !== undefined ? p.characterId : 0;
-  const pCharData = typeof CHARACTERS !== 'undefined' && CHARACTERS[pCharId];
-  const pSrc = pCharData && pCharData.file ? getSpriteUrl(pCharData.file) : null;
+  const pSrc = p.character ? getSpriteUrl(p.character) : null;
   const diff = G.difficulty;
   const pkLevel = gym.difficulty_scale ? (gym.difficulty_scale[diff] || 2) : 2;
   const tc = TYPE_COLORS[gym.type] || '#C9A84C';
